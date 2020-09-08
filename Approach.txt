@@ -1,0 +1,16 @@
+Part 1) Data Collection:
+The words "toddler", "teenagers", "adults" are searched on images.google.com
+and corresponding images are extracted using javascript.
+Train and validation foledrs are created in a 3:1 ratio of number of images.
+
+Part 2) Model Training:
+I built Convolutional Neural Network using keras with tensorflow.
+All the images are resized to a fixed length and width and passed to the first layer of CNN.
+My model is : Conv2D, pool, Conv2D, pool, Flatten, Dense, Dense(softmax)
+Optimizer used is Adam with learning rate of 0.05
+
+Part 3) Results
+The predictions are stored in a dataframe, which when left joined with the given sample test dataframe produces images in the correct order.
+
+
+
